@@ -1,0 +1,50 @@
+---
+---
+
+$colDippam: #14743D
+$colEppi: #069
+$colIed: #D70060
+$colVmr: #16A995
+$titleFont: normal 1em Museo
+$headingFont: 1em Lato
+
+html
+  min-height: 100vh
+
+body
+  font: 1em/1.4em Helvetica, Arial, sans-serif
+  min-height: 100vh
+  background: #FFF
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin: 0
+  padding: 0
+  > header
+    background: $colDippam
+    color: #FFF
+    display: flex
+    justify-content: space-between
+    align-items: center
+    h1
+      margin: 1em
+      font-size: 1.6em
+      font-weight: normal
+    a
+      color: #FFF
+      text-decoration: none
+    nav
+      margin-right: 1em
+    a.menu-icon
+      display: none
+  > footer
+    background: $colDippam
+    color: #FFF
+    padding: 1em
+    svg
+      display: none
+  main
+    flex: 1
+    margin: 1em
+    h1
+      font-weight: normal
