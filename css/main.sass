@@ -5,46 +5,58 @@ $colDippam: #14743D
 $colEppi: #069
 $colIed: #D70060
 $colVmr: #16A995
-$titleFont: normal 1em Museo
-$headingFont: 1em Lato
-
-html
-  min-height: 100vh
 
 body
-  font: 1em/1.4em Helvetica, Arial, sans-serif
-  min-height: 100vh
-  background: #FFF
-  display: flex
-  flex-direction: column
-  justify-content: space-between
+  font: 1.1em/1.5em sans-serif
   margin: 0
-  padding: 0
   > header
-    background: $colDippam
-    color: #FFF
-    display: flex
-    justify-content: space-between
-    align-items: center
     h1
-      margin: 1em
-      font-size: 1.6em
-      font-weight: normal
+      display: inline-block
+      font-size: 1.4em
+      font-weight: 400
+      line-height: 1.1em
+    em
+      display: block
+      font-style: normal
+      font-weight: 600
     a
-      color: #FFF
+      color: #000
+      display: inline-block
+      margin: 1em
       text-decoration: none
-    nav
-      margin-right: 1em
-    a.menu-icon
-      display: none
-  > footer
-    background: $colDippam
-    color: #FFF
-    padding: 1em
     svg
-      display: none
+      height: 3em
+      margin: 0.2em 0.5em -0.2em 0
+      width: 3em
+    stop
+      stop-color: $colDippam
+    nav
+      float: right
+      margin: 1em
+  > footer
+    border-top: 1px solid #CCC
+    padding: 1em
+    a
+      color: #000
+    svg
+      height: 1.1em
+    p
+      margin: 0
+    nav#sitemap
+      ul
+        list-style: none
+        padding: 0.5em 0
+      li
+        margin: 0.5em 0
+      > ul > li
+        float: left
+        margin: 0 2em 0 0
+      > ul > li > a:first-child
+        font-weight: 600
+    div
+      clear: both
+
   main
-    flex: 1
+    display: block
     margin: 1em
-    h1
-      font-weight: normal
+    width: 50em    
