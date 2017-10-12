@@ -45,6 +45,10 @@ There are some common params accepted by all:
 
 ### EPPI Params
 
+Maybe the search field wouln't need to be specified with appropriate weighting?
+
+nb.  Facet IDs are reused from the EPPI collection.
+
 ```
 - *fields*: One of fulltext, title, exact_title, code, paper_no.
 - *from*: Range start. Year.
@@ -52,13 +56,19 @@ There are some common params accepted by all:
 
 #### Facets (Document Type)
 
-- *cat[26]* Account
 - *cat[25]* Bill
+- *cat[26]* Account
 - *cat[31]* Command Paper
 - *cat[32]* Report
 ```
 
 ### IED Params
+
+At the time of writing, the date input element couldn't be used.  It would have been better to reformat the date at the client before making the request, but maybe this was simpler for progressive fallback?
+
+The calendar functionality doesn't work or has been removed (no errors).
+
+The facet IDs aren't sequential.  Maybe there are missing or unused facets?  nb.  Facet IDs are reused from the EPPI collection.
 
 ```
 - *start[d]*: Start date.
@@ -134,3 +144,10 @@ The following fields are indexed placenames.
 1. [HttpUtil ReverseProxy](https://golang.org/pkg/net/http/httputil/#ReverseProxy)
 1. [Reverse Proxy in Go](https://blog.charmes.net/post/reverse-proxy-go/)
 1. [Tyk API Gateway](https://tyk.io/)
+
+
+
+
+
+
+
